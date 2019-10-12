@@ -48,7 +48,6 @@ public class Main {
 
                     if (start <= end){
                         System.out.println("已经爬取到底了");
-                        sqlSession.close();
                     }
                     for (Movie movie : list) {
                         movieMapper.insert(movie);
